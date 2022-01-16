@@ -93,7 +93,7 @@ function ClickMouseButton(event) {
 const infohistory4 = soccerTeams[4].getHistory();
 document.getElementById("historyText").innerHTML = infohistory4;    
 function changeColorHistory(x) {
-    x.style.color = "black";
+    x.style.color = "white";
 }
 
 function normalColorHistory(x) {
