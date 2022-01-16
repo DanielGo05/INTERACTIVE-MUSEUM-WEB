@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 #000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+    
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.logo{
+    height: 120px;
+}
+
+.logo img{
+    height: 100%;
+    margin: auto;
+    vertical-align: top;
+}
+
+.links{
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+
+.links a{
+    color: #5D6678;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.museum{
+    width: 100%;
+    vertical-align: top;
+    margin: auto;
+    background: rgb(1, 187, 1);
+}
+
+.header-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-texts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-texts p{
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+}
+
+.header-texts h1{
+    font-size: 60px;
+    color: black;
+} 
+
+.header-content img{
+    height: 100%;
+    width: 100%;
+}
+
+.MillonariosTeam{
+    background: rgb(2, 2, 109);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Millonarios{
+    height: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.Mcontent{
+    height: 85%;
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+.Mselection{
+    height: 100%;
+    width: 150px;
+    text-align: center;
+}
+
+.Mtexts{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.Mtexts p{
+    font-size: large;
+    font-weight: 50;
+    margin: 10px 15px 10px 10px;
+    color: black;
+    text-align: justify;
+}
+
+.Millonarios h2{
+    margin-top: 10px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.Mcontent img{
+    float: right;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 8px 32px grey;
+}
+
+.Mselection p{
+    font-size: 18px;
+    margin: 10px 10px 10px 10px;
+    color: white;
+}
+
+#selection{
+    float: left;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 15px;
+    vertical-align: top;
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+.NacionalTeam{
+    background: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden; 
+}
+
+.Nacional{
+    height: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.Nacional h2{
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.Ncontent{
+    height: 85%;
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+.NButton{
+    height: 100%;
+    width: 150px;
+    text-align: center;
+}
+
+.Ntexts{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.Ntexts p{
+    font-size: large;
+    font-weight: 50;
+    margin: 10px 10px 10px 10px;
+    color: rgb(1, 153, 1);
+    text-align: justify;
+}
+
+.Ncontent img{
+    float: left;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.NButton p{
+    font-size: 18px;
+    margin: 10px 10px 10px 10px;
+    color: black;
+}
+
+#button{
+    float: right;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    vertical-align: top;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgb(31 222 130 / 46%);
+    background: black;
+}
+
+.AmericaTeam{
+    background: black;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.America{
+    height: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.America h2{
+    margin-top: 10px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.Acontent{
+    height: 85%;
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+.Acontent p{
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    color: white;
+}
+
+.droptarget {
+    float: left; 
+    width: 600px; 
+    height: 210px;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.droptarget img{
+    margin-left: 125px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.historyText p{
+    font-size: 15px;
+    margin: auto;
+    color: red;
+    text-align: justify;
+}
+
+.trophyText p{
+    font-size: 15px;
+    margin: auto;
+    color: red;
+    text-align: justify;
+}
+
+.CaliTeam{
+    background: rgb(1, 100, 1);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Cali{
+    height: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.Cali h2{
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.Ccontent{
+    height: 85%;
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+.Ccontent img{
+    float: left;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Ctexts{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.Ctexts p{
+    font-size: large;
+    font-weight: 50;
+    margin: 20px 20px 20px 20px;
+    color: white;
+    text-align: center;
+}
+
+.SantafeTeam{
+    background: red;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Santafe{
+    height: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.Santafe h2{
+    margin-top: 10px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.Scontent{
+    height: 85%;
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+.Scontent img{
+    float: right;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Stexts{
+    height: 100%;
+    width: 85%;
+    text-align: center;
+}
+
+.mousetext{
+    font-size: medium;
+    margin: 10px;
+    text-align: center;
+    color:slategrey;
+}
+
+.infoTexts{
+    height: 80%;
+    width: 95%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+.infoTexts p{
+    font-size: 20px;
+    color: red;
+    font-weight: 50;
+    margin: 10px;
+    text-align: justify;
+}
+
+footer{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+footer img{
+    height: 100%;
+    vertical-align: top;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer ul li{
+    color: #5D6678;
+    margin-right: 80px;
+    list-style: none;
+}

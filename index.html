@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museum</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/Team.js"></script>
+        <script src="./js/Museum.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <section class="first">
+                    <div class="logo">
+                        <img src="./img/Liga BetPlay.png" alt="Logo de La Liga BetPlay">
+                    </div>
+                    <div class="links">
+                        <a href="#Millonarios">MILLONARIOS</a>
+                        <a href="#Nacional">NACIONAL</a>
+                        <a href="#America">AMERICA</a>
+                        <a href="#Cali">CALI</a>
+                        <a href="#SantaFe">SANTAFE</a>
+                    </div>
+                </section>
+            </nav>
+            <section class="museum">
+                <div class="header-content">
+                    <div class="header-texts">
+                        <h1>BetPlay Soccer Teams</h1>
+                        <p>Museo de los Equipos mas Grandes del Futbol Profesional Colombiano, informacion sobre su historia y trofeos.</p>
+                    </div>
+                    <img src="./img/TrofeoB.jpeg" alt="Trofeo BetPlay">
+                </div>
+            </section>
+        </header>
+        <main>
+            <a name="Millonarios"></a>
+            <section class="MillonariosTeam">
+                <div class="Millonarios">
+                    <h2>MILLONARIOS FC</h2>
+                    <div class="Mcontent">
+                        <div class="Mselection">
+                            <p>Seleccione la informacion a ver</p>
+                            <select id="selection" onchange="changeTheInformationBySelection()">
+                                <option value="Options">Opciones</option>
+                                <option value="History">Historia</option>
+                                <option value="Trophy">Trofeos</option>
+                            </select>
+                        </div>
+                        <div class="Mtexts">
+                            <p id="textsInfoM"></p>
+                        </div>
+                        <img src="./img/millonarios.jpg" alt="Escudo de Millonarios">
+                    </div>
+                </div>
+            </section>
+            <a name="Nacional"></a>
+            <section class="NacionalTeam">
+                <div class="Nacional">
+                    <h2>CLUB ATLETICO NACIONAL</h2>
+                    <div class="Ncontent">
+                        <img src="./img/nacional.jpg" alt="Escudo de Nacional">
+                        <div class="Ntexts">
+                            <p id="textInfoN"></p>
+                        </div>
+                        <div class="NButton">
+                            <p>Oprima el boton para cambiar la informacion</p>
+                            <button id="button" onclick="showInfoByClickButton()">Haz click</button>                            
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <a name="America"></a>
+            <section class="AmericaTeam">
+                <div class="America">
+                    <h2>AMERICA DE CALI</h2>
+                    <div class="Acontent">
+                        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img src="./img/america.png" alt="Escudo del America" ondragstart="dragStart(event)" draggable="true" id="dragtarget">
+                            <div class="historyText">
+                                <p id="TextInfoHistoryA"></p>
+                            </div>
+                        </div>
+                        <p>Deslice la imagen de un cuadro a otro para ver la informacion debajo</p>
+                        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div class="trophyText">
+                                <p id="TextInfoTrophyA"></p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <a name="Cali"></a>
+            <section class="CaliTeam">
+                <div class="Cali">
+                    <h2>DEPORTIVO CALI</h2>
+                    <div class="Ccontent">
+                        <img src="./img/cali.png" alt="Escudo del Cali">
+                        <div class="Ctexts" onmousedown="ClickMouseButton(event)">
+                            <p>Oprima algun boton del mouse segun la informacion que desee ver sobre el siguiente texto:</p>
+                            <p>
+                                Historia = Boton izquierdo del mouse<br><br>
+                                Trofeos = Boton derecho del moues<br>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <a name="SantaFe"></a>
+            <section class="SantafeTeam">
+                <div class="Santafe">
+                    <h2>INDEPENDIENTE SANTAFE</h2>
+                    <div class="Scontent">
+                        <div class="Stexts">
+                            <p class="mousetext">Arratre el mouse sobre el siguiente cuadro para ver la informacion</p>
+                            <div class="infoTexts">
+                                <p id="historyText" onmouseover="changeColorHistory(this)" onmouseout="normalColorHistory(this)"></p>
+                                <p id="trophyText" onmouseover="changeColorTrophy(this)" onmouseout="normalColorTrophy(this)"></p>
+                            </div>
+                          </div>
+                        <img src="./img/santafe.png" alt="Escudo de SantaFe">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="./img/Liga BetPlay.png" alt="Logo de La Liga BetPlay">
+            <ul>
+                <li>Servicios</li>
+                <li>Acerca De</li>
+                <li>Redes Sociales</li>
+            </ul>
+        </footer>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
